@@ -13,6 +13,7 @@
         grid-column-start: 1;
         grid-column: auto / span 2;
         background-size: 100% auto;
+        min-height: 30vh;
     }
 
     #reviews {
