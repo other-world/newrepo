@@ -8,13 +8,11 @@
         justify-content: center;
     }
 
-
     #featured {
         grid-row-start: 1;
+        grid-column-start: 1;
         grid-column: auto / span 2;
-        min-width: fit-content;
         background-size: 100% auto;
-        height: auto;
     }
 
     #reviews {

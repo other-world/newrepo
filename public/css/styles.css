@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 /******* Major sections (html, body, header, main, footer) *******/
-body, html {
+body {
   margin: 0;
 }
 
@@ -19,8 +19,10 @@ body, html {
   background-color: white;
   border: 5px outset lightskyblue;
   border-radius: 5px;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
   padding: .75rem;
+  max-width: 1000px;
+
 }
 
 header, main, nav, footer {
@@ -52,8 +54,9 @@ nav ul {
   background-color: black;
   color: white;
   margin: 0 auto;
-  padding: 0.5rem 2rem;
+  padding: 0.15rem ;
   list-style-type: none;
+  font-size: 2.5vw;
 }
 
 nav a {
@@ -78,14 +81,34 @@ main{
 
 .main-wrapper {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   justify-content: center;
 }
 
 /******* Minor sections in main *******/
 
+h1 {
+  font-size: 7vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+h3 {
+  font-size: 4vw;
+}
+
+h4 {
+  font-size: 2.5vw;
+}
+
+li {
+  font-size: 2vw;
+}
+
 h2, h3 {
-  text-align: center;
+  text-align: left;
 }
 
 section {
@@ -94,11 +117,20 @@ section {
 
 #featured {
   position: relative;
-  background-size: auto;
+  width: 100%;
+/*  background-size: auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 300px;
-  background-image: url("/images/vehicles/delorean.jpg");
+  background-image: url("/images/vehicles/delorean.jpg");*/
+}
+
+.backgound_img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: 100%;
 }
 
 .overlay {
