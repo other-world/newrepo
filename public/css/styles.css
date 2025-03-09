@@ -4,3 +4,153 @@
 *:after {
   box-sizing: border-box;
 }
+/******* Major sections (html, body, header, main, footer) *******/
+body, html {
+  margin: 0;
+}
+
+.background {
+  /* The image used */
+  background-image: url("/images/site/checkerboard.jpg");
+  background-repeat: repeat;
+}
+
+#wrapper {
+  background-color: white;
+  border: 5px outset lightskyblue;
+  border-radius: 5px;
+  margin: 1.5rem;
+  padding: .75rem;
+}
+
+header, main, nav, footer {
+  /* border: 2px solid rgb(12, 60, 90); */
+  padding: 0 .75rem;
+}
+
+header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+header a:hover {
+  color: rgb(71, 70, 70);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: .5rem 1rem;
+}
+
+nav a:link, a:visited {
+
+}
+
+nav a:hover {
+  background-color: rgb(71, 70, 70);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+}
+
+/******* Minor sections in main *******/
+
+h2, h3 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+#featured {
+  position: relative;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 300px;
+  background-image: url("/images/vehicles/delorean.jpg");
+}
+
+.overlay {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 30px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(172, 172, 173);
+  color: white;
+}
+
+.overlay ul {
+  list-style-type: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+.overlay button {
+  display: flex;
+  margin: 5px auto;
+}
+
+#reviews li {
+  font-size: larger;
+    margin: 10px 0;
+}
+
+.upgrade_grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.upgrade_card {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(22, 16, 77);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(22, 16, 77);
+  margin: 1rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  background-color: aliceblue;
+}
