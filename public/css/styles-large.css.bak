@@ -4,13 +4,16 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        justify-content: center;
     }
 
     #featured {
         grid-row-start: 1;
+        grid-column-start: 1;
         grid-column: auto / span 2;
         background-size: 100% auto;
-        height: 400px;
+        min-height: 30vh;
     }
 
     #reviews {
@@ -22,31 +25,4 @@
         grid-row-start: 2;
         grid-column-start: 1;
     }
-
-    .upgrade_card img {
-        width: 65px;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    h1 {
-        font-size: 42pt;
-      }
-      
-      h2 {
-        font-size: 30pt;
-      }
-      
-      h3 {
-        font-size: 24pt;
-        padding-left: 1rem;
-      }
-      
-      h4 {
-        font-size: 16pt;
-      }
-      
-      li {
-        font-size: 12pt;
-      }
 }
