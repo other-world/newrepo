@@ -1,6 +1,16 @@
 @media screen and (min-width: 650px) {
+    .background {
+        /* The image used */
+        background-image: url("/images/site/checkerboard.jpg");
+        background-repeat: repeat;
+    }
 
-    main-wrapper {
+    #wrapper {
+        border: 5px outset var(--accent2-color);
+        margin: 1rem auto;
+    }
+
+    .main-wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;

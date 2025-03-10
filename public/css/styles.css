@@ -29,20 +29,13 @@ body {
   margin: 0;
 }
 
-.background {
-  /* The image used */
-  background-image: url("/images/site/checkerboard.jpg");
-  background-repeat: repeat;
-}
 
 #wrapper {
   background-color: white;
-  border: 5px outset lightskyblue;
-  border-radius: 5px;
-  margin: 1.5rem auto;
-  padding: .75rem;
+  border: 0px solid white;
+  margin: 0 auto;
+  padding: 0.5rem;
   max-width: 1000px;
-
 }
 
 header, main, nav, footer {
@@ -107,6 +100,8 @@ main{
   background-size: clamp(300px, 100%, 800px) auto;
   background-repeat: no-repeat;
   background-position: 50% 0%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /******* Minor sections in main *******/
@@ -121,7 +116,6 @@ h2 {
 
 h3 {
   font-size: 4vw;
-  padding-left: 1rem;
 }
 
 h4 {
@@ -132,8 +126,9 @@ li {
   font-size: 2vw;
 }
 
-h2, h3 {
+h1, h2, h3 {
   text-align: left;
+  padding-left: .75em;
 }
 
 .listTitle {
